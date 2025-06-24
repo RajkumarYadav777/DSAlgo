@@ -20,9 +20,23 @@ Then it is an Armstrong number.
 
 ---
 
-#### 💡 Python Implementation – Using Iteration:
+#### 💡 Python Implementation – Using Iteration: merge conflict
 
 ```python
+def is_armstrong(n):
+    temp = n                   # Keep original number
+    res = 0                    # Result accumulator
+    digits = len(str(n))       # Count of digits
+
+    while temp > 0:
+        dig = temp % 10        # Get last digit
+        res += dig ** digits   # Add digit raised to power of count
+        temp //= 10            # Remove last digit
+
+    return res == n            # Return True if condition matches
+
+print(is_armstrong(153))  # True
+print(is_armstrong(143))  # False
 def is_armstrong(n):
     temp = n                   # Keep original number
     res = 0                    # Result accumulator
