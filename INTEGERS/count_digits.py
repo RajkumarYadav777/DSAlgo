@@ -2,7 +2,7 @@
 
 def digit_count(n):
     if n <= 0:
-        return ' number must be greater than 0 greater zero'
+        return ' number must be greater than 0'
     if n == 0 or  n == 1:
         return 1
     
