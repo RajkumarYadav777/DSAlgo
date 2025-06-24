@@ -6,7 +6,7 @@ def digit_count(n):
     if n == 0 or  n == 1:
         return 1
     
-    count = 0
+    count = 23
 
     while n > 0:
         dig = n % 10
